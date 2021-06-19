@@ -1,0 +1,738 @@
+ERROR: 2021/06/13 15:49:14.390771 C:/Users/USER/code/snippetbox/cmd/web/handler.go:26: open ./ui/html/home.page.tmpl: The system cannot find the file specified.
+ERROR: 2021/06/13 16:31:12.281172 C:/Users/USER/code/snippetbox/cmd/web/handler.go:66: open ./ui/html/home.page.tmpl: The system cannot find the file specified.
+goroutine 6 [running]:
+runtime/debug.Stack(0xc000088180, 0xc0000b6000, 0x49)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc00003cc10, 0x1141b80, 0xc0000aa000, 0x113d000, 0xc000088180)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:65 +0x69
+main.(*application).home(0xc00003cc10, 0x1141b80, 0xc0000aa000, 0xc0000a0000)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:29 +0x2cb
+net/http.HandlerFunc.ServeHTTP(0xc00003cc30, 0x1141b80, 0xc0000aa000, 0xc0000a0000)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xc000046280, 0x1141b80, 0xc0000aa000, 0xc0000a0000)
+	C:/Program Files/Go/src/net/http/server.go:2448 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00013a000, 0x1141b80, 0xc0000aa000, 0xc0000a0000)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc000060f00, 0x11421c0, 0xc00008a000)
+	C:/Program Files/Go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3013 +0x3b8
+
+ERROR: 2021/06/13 16:33:31.192669 C:/Users/USER/code/snippetbox/cmd/web/handler.go:29: open ./ui/html/home.page.tmpl: The system cannot find the file specified.
+goroutine 18 [running]:
+runtime/debug.Stack(0xc000075080, 0xc00000e230, 0x49)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc000090000, 0x521b60, 0xc000144000, 0x51d020, 0xc000075080)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:65 +0x69
+main.(*application).home(0xc000090000, 0x521b60, 0xc000144000, 0xc000140000)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:29 +0x2cb
+net/http.HandlerFunc.ServeHTTP(0xc000090020, 0x521b60, 0xc000144000, 0xc000140000)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xc000092040, 0x521b60, 0xc000144000, 0xc000140000)
+	C:/Program Files/Go/src/net/http/server.go:2448 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00009a000, 0x521b60, 0xc000144000, 0xc000140000)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc0000b0000, 0x5221a0, 0xc000046240)
+	C:/Program Files/Go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3013 +0x3b8
+ERROR: 2021/06/14 14:20:50.420692 C:/Users/USER/code/snippetbox/cmd/web/main.go:45: invalid DSN: missing the slash separating the database name
+ERROR: 2021/06/14 14:21:45.157311 C:/Users/USER/code/snippetbox/cmd/web/main.go:45: Error 1045: Access denied for user 'web'@'localhost' (using password: YES)
+ERROR: 2021/06/14 14:22:59.418409 C:/Users/USER/code/snippetbox/cmd/web/main.go:45: Error 1045: Access denied for user 'web'@'localhost' (using password: YES)
+ERROR: 2021/06/14 15:22:43.013719 C:/Users/USER/code/snippetbox/cmd/web/handler.go:59: sql: no rows in result set
+goroutine 22 [running]:
+runtime/debug.Stack(0xc000104280, 0x124545a, 0x1a)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc00010baa8, 0x12b5190, 0xc0000ac000, 0x12afe40, 0xc000104280)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:91 +0x69
+main.application.showSnippet(0xc000100190, 0xc0001001e0, 0xc000154040, 0x12b5190, 0xc0000ac000, 0xc0000a0000)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:59 +0x17a
+net/http.HandlerFunc.ServeHTTP(0xc0001126a0, 0x12b5190, 0xc0000ac000, 0xc0000a0000)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xc0001722c0, 0x12b5190, 0xc0000ac000, 0xc0000a0000)
+	C:/Program Files/Go/src/net/http/server.go:2448 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc0001a6000, 0x12b5190, 0xc0000ac000, 0xc0000a0000)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc000111040, 0x12b5980, 0xc00008c000)
+	C:/Program Files/Go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3013 +0x3b8
+ERROR: 2021/06/14 15:23:24.011392 C:/Users/USER/code/snippetbox/cmd/web/handler.go:59: sql: no rows in result set
+goroutine 24 [running]:
+runtime/debug.Stack(0xc000104280, 0x124545a, 0x1a)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc00010faa8, 0x12b5190, 0xc0001a61c0, 0x12afe40, 0xc000104280)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:91 +0x69
+main.application.showSnippet(0xc000100190, 0xc0001001e0, 0xc000154040, 0x12b5190, 0xc0001a61c0, 0xc0000a0200)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:59 +0x17a
+net/http.HandlerFunc.ServeHTTP(0xc0001126a0, 0x12b5190, 0xc0001a61c0, 0xc0000a0200)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xc0001722c0, 0x12b5190, 0xc0001a61c0, 0xc0000a0200)
+	C:/Program Files/Go/src/net/http/server.go:2448 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc0001a6000, 0x12b5190, 0xc0001a61c0, 0xc0000a0200)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc0001110e0, 0x12b5980, 0xc00008c1c0)
+	C:/Program Files/Go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3013 +0x3b8
+ERROR: 2021/06/14 15:26:03.758566 C:/Users/USER/code/snippetbox/cmd/web/handler.go:59: sql: no rows in result set
+goroutine 5 [running]:
+runtime/debug.Stack(0xc000104280, 0x124545a, 0x1a)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc0001c1aa8, 0x12b5190, 0xc0001a62a0, 0x12afe40, 0xc000104280)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:91 +0x69
+main.application.showSnippet(0xc000100190, 0xc0001001e0, 0xc000154040, 0x12b5190, 0xc0001a62a0, 0xc0001ac300)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:59 +0x17a
+net/http.HandlerFunc.ServeHTTP(0xc0001126a0, 0x12b5190, 0xc0001a62a0, 0xc0001ac300)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xc0001722c0, 0x12b5190, 0xc0001a62a0, 0xc0001ac300)
+	C:/Program Files/Go/src/net/http/server.go:2448 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc0001a6000, 0x12b5190, 0xc0001a62a0, 0xc0001ac300)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc00004c000, 0x12b5980, 0xc000172600)
+	C:/Program Files/Go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3013 +0x3b8
+ERROR: 2021/06/14 15:26:37.166784 C:/Users/USER/code/snippetbox/cmd/web/handler.go:59: sql: no rows in result set
+goroutine 6 [running]:
+runtime/debug.Stack(0xc000104280, 0x124545a, 0x1a)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc0001c1aa8, 0x12b5190, 0xc000056000, 0x12afe40, 0xc000104280)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:91 +0x69
+main.application.showSnippet(0xc000100190, 0xc0001001e0, 0xc000154040, 0x12b5190, 0xc000056000, 0xc0001ac400)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:59 +0x17a
+net/http.HandlerFunc.ServeHTTP(0xc0001126a0, 0x12b5190, 0xc000056000, 0xc0001ac400)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xc0001722c0, 0x12b5190, 0xc000056000, 0xc0001ac400)
+	C:/Program Files/Go/src/net/http/server.go:2448 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc0001a6000, 0x12b5190, 0xc000056000, 0xc0001ac400)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc00004c0a0, 0x12b5980, 0xc000172740)
+	C:/Program Files/Go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3013 +0x3b8
+ERROR: 2021/06/14 15:44:58.565369 C:/Users/USER/code/snippetbox/cmd/web/handler.go:44: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER_BY created DESC LIMIT 10' at line 1
+goroutine 19 [running]:
+runtime/debug.Stack(0xc0001aa000, 0xc0001ac180, 0xbe)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc0000aa000, 0x87b730, 0xc0001a4000, 0x877600, 0xc0001aa000)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:99 +0x69
+main.(*application).home(0xc0000aa000, 0x87b730, 0xc0001a4000, 0xc00019a000)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:44 +0x1e9
+net/http.HandlerFunc.ServeHTTP(0xc000094010, 0x87b730, 0xc0001a4000, 0xc00019a000)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xc0000ac000, 0x87b730, 0xc0001a4000, 0xc00019a000)
+	C:/Program Files/Go/src/net/http/server.go:2448 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc0000b0000, 0x87b730, 0xc0001a4000, 0xc00019a000)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc0000a80a0, 0x87bcc0, 0xc000186000)
+	C:/Program Files/Go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3013 +0x3b8
+ERROR: 2021/06/14 16:42:38.126058 C:/Users/USER/code/snippetbox/cmd/web/main.go:50: dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+ERROR: 2021/06/14 17:03:13.360512 C:/Users/USER/code/snippetbox/cmd/web/handler.go:79: open ./ui/html/show.page.tmpl: The system cannot find the file specified.
+goroutine 10 [running]:
+runtime/debug.Stack(0xc0000901b0, 0xc0000b4140, 0x49)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc00004baa8, 0x13f5250, 0xc00008e1c0, 0x13f00c0, 0xc0000901b0)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:116 +0x69
+main.application.showSnippet(0xc000044190, 0xc0000441e0, 0xc000006050, 0x13f5250, 0xc00008e1c0, 0xc000150200)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:79 +0x2fc
+net/http.HandlerFunc.ServeHTTP(0xc00001e6e0, 0x13f5250, 0xc00008e1c0, 0xc000150200)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xc000040300, 0x13f5250, 0xc00008e1c0, 0xc000150200)
+	C:/Program Files/Go/src/net/http/server.go:2448 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00013e000, 0x13f5250, 0xc00008e1c0, 0xc000150200)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc000051040, 0x13f5a40, 0xc0000404c0)
+	C:/Program Files/Go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3013 +0x3b8
+ERROR: 2021/06/14 18:06:44.745349 C:/Program Files/Go/src/net/http/server.go:3137: http: superfluous response.WriteHeader call from main.(*application).home (handler.go:48)
+ERROR: 2021/06/14 18:40:46.872566 C:/Users/USER/code/snippetbox/cmd/web/helpers.go:20: template: show.page.tmpl:10:6: executing "body" at <len nil>: error calling len: reflect: call of reflect.Value.Type on zero Value
+goroutine 11 [running]:
+runtime/debug.Stack(0xc0000a0200, 0xc0000cc090, 0x82)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc00004baa0, 0x10c7670, 0xc0000d0000, 0x10c31e0, 0xc0000a0200)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:120 +0x69
+main.(*application).render(0xc00004baa0, 0x10c7670, 0xc0000d0000, 0xc0000a6100, 0x1050693, 0xe, 0xc0000a00c0)
+	C:/Users/USER/code/snippetbox/cmd/web/helpers.go:20 +0x12d
+main.application.showSnippet(0xc000044190, 0xc0000441e0, 0xc000006070, 0xc00006f140, 0x10c7670, 0xc0000d0000, 0xc0000a6100)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:91 +0x1ab
+net/http.HandlerFunc.ServeHTTP(0xc00006f5c0, 0x10c7670, 0xc0000d0000, 0xc0000a6100)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xc000040580, 0x10c7670, 0xc0000d0000, 0xc0000a6100)
+	C:/Program Files/Go/src/net/http/server.go:2448 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000152000, 0x10c7670, 0xc0000d0000, 0xc0000a6100)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc000050fa0, 0x10c7e60, 0xc000096300)
+	C:/Program Files/Go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3013 +0x3b8
+ERROR: 2021/06/14 18:40:46.879604 C:/Program Files/Go/src/net/http/server.go:3137: http: superfluous response.WriteHeader call from main.(*application).serverError (handler.go:122)
+ERROR: 2021/06/14 18:46:32.755496 C:/Users/USER/code/snippetbox/cmd/web/helpers.go:24: template: show.page.tmpl:10:6: executing "body" at <len nil>: error calling len: reflect: call of reflect.Value.Type on zero Value
+goroutine 36 [running]:
+runtime/debug.Stack(0xc00001eca0, 0xc000142090, 0x82)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc00017baa0, 0xda7670, 0xc0001561c0, 0xda31e0, 0xc00001eca0)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:120 +0x69
+main.(*application).render(0xc00017baa0, 0xda7670, 0xc0001561c0, 0xc000150200, 0xd30693, 0xe, 0xc00001eb80)
+	C:/Users/USER/code/snippetbox/cmd/web/helpers.go:24 +0x10e
+main.application.showSnippet(0xc000044190, 0xc0000441e0, 0xc0000060a8, 0xc00006f140, 0xda7670, 0xc0001561c0, 0xc000150200)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:91 +0x1ab
+net/http.HandlerFunc.ServeHTTP(0xc00006fb60, 0xda7670, 0xc0001561c0, 0xc000150200)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xc000040700, 0xda7670, 0xc0001561c0, 0xc000150200)
+	C:/Program Files/Go/src/net/http/server.go:2448 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000156000, 0xda7670, 0xc0001561c0, 0xc000150200)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc0000be280, 0xda7e60, 0xc000040900)
+	C:/Program Files/Go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3013 +0x3b8
+ERROR: 2021/06/14 18:47:30.100972 C:/Users/USER/code/snippetbox/cmd/web/helpers.go:24: template: show.page.tmpl:10:6: executing "body" at <len nil>: error calling len: reflect: call of reflect.Value.Type on zero Value
+goroutine 36 [running]:
+runtime/debug.Stack(0xc000186320, 0xc0001a8090, 0x82)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc00004baa0, 0x5f7670, 0xc0001c8000, 0x5f31e0, 0xc000186320)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:120 +0x69
+main.(*application).render(0xc00004baa0, 0x5f7670, 0xc0001c8000, 0xc0001b8100, 0x580693, 0xe, 0xc0001861e0)
+	C:/Users/USER/code/snippetbox/cmd/web/helpers.go:24 +0x10e
+main.application.showSnippet(0xc000044190, 0xc0000441e0, 0xc000090080, 0xc00018a060, 0x5f7670, 0xc0001c8000, 0xc0001b8100)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:91 +0x1ab
+net/http.HandlerFunc.ServeHTTP(0xc00008ac60, 0x5f7670, 0xc0001c8000, 0xc0001b8100)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xc0000984c0, 0x5f7670, 0xc0001c8000, 0xc0001b8100)
+	C:/Program Files/Go/src/net/http/server.go:2448 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc0000be000, 0x5f7670, 0xc0001c8000, 0xc0001b8100)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc0000c8000, 0x5f7e60, 0xc0001a21c0)
+	C:/Program Files/Go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3013 +0x3b8
+ERROR: 2021/06/15 18:29:17.920346 C:/Users/USER/code/snippetbox/cmd/web/main.go:52: template: create.page.tmpl:10: malformed character constant: 'title'
+ERROR: 2021/06/16 14:18:36.646652 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:53294: EOF
+ERROR: 2021/06/16 14:18:50.515654 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:52190: remote error: tls: unknown certificate
+ERROR: 2021/06/16 14:18:50.516825 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:55410: remote error: tls: unknown certificate
+ERROR: 2021/06/16 14:18:56.652751 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:54127: EOF
+ERROR: 2021/06/16 14:18:56.685180 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:63410: remote error: tls: unknown certificate
+ERROR: 2021/06/16 14:18:56.692602 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:62857: remote error: tls: unknown certificate
+ERROR: 2021/06/16 14:19:06.655369 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:51054: EOF
+ERROR: 2021/06/16 14:19:18.016276 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:59766: remote error: tls: unknown certificate
+ERROR: 2021/06/16 14:19:18.030555 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:64133: remote error: tls: unknown certificate
+ERROR: 2021/06/16 14:19:29.576722 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:64941: remote error: tls: unknown certificate
+ERROR: 2021/06/16 14:20:39.031582 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:53268: remote error: tls: unknown certificate
+ERROR: 2021/06/16 14:20:55.135854 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:57171: remote error: tls: unknown certificate
+ERROR: 2021/06/16 14:22:00.669875 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:49643: remote error: tls: unknown certificate
+ERROR: 2021/06/16 14:36:01.234528 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:53151: remote error: tls: unknown certificate
+ERROR: 2021/06/16 15:32:19.329721 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:62306: remote error: tls: unknown certificate
+ERROR: 2021/06/16 15:32:25.175777 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:56229: remote error: tls: unknown certificate
+ERROR: 2021/06/16 15:32:34.731674 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:64994: remote error: tls: unknown certificate
+ERROR: 2021/06/16 15:32:34.742180 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:51972: remote error: tls: unknown certificate
+ERROR: 2021/06/16 15:32:43.027705 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:60168: remote error: tls: unknown certificate
+ERROR: 2021/06/16 15:32:56.174754 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:61099: remote error: tls: unknown certificate
+ERROR: 2021/06/16 15:32:56.188042 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:60741: remote error: tls: unknown certificate
+ERROR: 2021/06/16 15:34:08.642140 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:52848: remote error: tls: unknown certificate
+ERROR: 2021/06/16 15:47:46.641671 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:58792: remote error: tls: unknown certificate
+ERROR: 2021/06/17 12:36:15.365424 C:/Users/USER/code/snippetbox/cmd/web/main.go:54: dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+ERROR: 2021/06/17 13:05:46.240110 C:/Users/USER/code/snippetbox/cmd/web/main.go:59: template: signup.page.tmpl:18: unterminated quoted string
+ERROR: 2021/06/17 13:07:24.279816 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:64652: read tcp [::1]:4000->[::1]:64652: i/o timeout
+ERROR: 2021/06/17 13:07:34.654192 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:63688: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:07:45.310709 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:61533: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:07:45.324451 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:54514: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:07:50.347587 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:54461: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:07:50.368243 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:61214: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:08:28.882688 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:60274: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:08:39.085990 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:49404: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:08:48.798451 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:57726: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:08:48.806020 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:58262: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:09:43.030516 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:64452: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:09:43.044897 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:58023: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:09:48.938557 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:58893: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:09:48.947995 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:62260: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:12:43.015344 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:64055: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:12:43.029498 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:54634: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:12:50.376348 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:61004: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:12:50.389532 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:50324: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:14:21.784776 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:58788: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:14:21.801290 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:50579: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:16:45.160431 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:50973: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:16:45.175481 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:53869: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:46:04.808493 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:62067: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:47:24.200374 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:49258: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:47:48.077642 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:61790: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:47:48.093009 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:55383: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:48:09.930785 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:56631: remote error: tls: unknown certificate
+ERROR: 2021/06/17 13:48:09.945595 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:63236: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:07:11.616552 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:58593: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:07:11.783071 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:50629: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:07:11.837022 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:60104: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:07:11.958373 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:63102: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:07:12.328972 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:50468: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:07:18.666043 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:58947: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:07:30.182263 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:57021: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:07:39.811487 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:57377: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:07:41.636029 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:62543: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:07:52.404059 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:64276: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:07:52.416966 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:55161: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:10:31.213406 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:54384: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:10:31.951478 C:/Users/USER/code/snippetbox/cmd/web/handler.go:187: Error 1146: Table 'snippets.users' doesn't exist
+goroutine 39 [running]:
+runtime/debug.Stack(0xc000004978, 0xc00000c780, 0x30)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc00008b230, 0x6d0c30, 0xc0001aa780, 0x6cafa0, 0xc000004978)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:144 +0x69
+main.(*application).signupUser(0xc00008b230, 0x6d0c30, 0xc0001aa780, 0xc0001a8300)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:187 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc00008e460, 0x6d0c30, 0xc0001aa780, 0xc0001a8300)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/golangcollege/sessions.(*Session).Enable.func1(0x6d0db0, 0xc000090148, 0xc0001a8300)
+	C:/Users/USER/Go/pkg/mod/github.com/golangcollege/sessions@v1.2.0/session.go:155 +0x156
+net/http.HandlerFunc.ServeHTTP(0xc000096360, 0x6d0db0, 0xc000090148, 0xc0000aa400)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/bmizerany/pat.(*PatternServeMux).ServeHTTP(0xc00008c240, 0x6d0db0, 0xc000090148, 0xc0000aa400)
+	C:/Users/USER/Go/pkg/mod/github.com/bmizerany/pat@v0.0.0-20210406213842-e4b6760bdd6f/mux.go:117 +0x15e
+main.secureHeaders.func1(0x6d0db0, 0xc000090148, 0xc0000aa400)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:12 +0x216
+net/http.HandlerFunc.ServeHTTP(0xc00008c258, 0x6d0db0, 0xc000090148, 0xc0000aa400)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).logRequest.func1(0x6d0db0, 0xc000090148, 0xc0000aa400)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:19 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0xc000096400, 0x6d0db0, 0xc000090148, 0xc0000aa400)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).recoverPanic.func1(0x6d0db0, 0xc000090148, 0xc0000aa400)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:37 +0x8e
+net/http.HandlerFunc.ServeHTTP(0xc000096420, 0x6d0db0, 0xc000090148, 0xc0000aa400)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.serverHandler.ServeHTTP(0xc0000c6000, 0x6d0db0, 0xc000090148, 0xc0000aa400)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.initALPNRequest.ServeHTTP(0x6d18e0, 0xc000073b60, 0xc0000e4380, 0xc0000c6000, 0x6d0db0, 0xc000090148, 0xc0000aa400)
+	C:/Program Files/Go/src/net/http/server.go:3459 +0xa5
+net/http.(*http2serverConn).runHandler(0xc00025a000, 0xc000090148, 0xc0000aa400, 0xc00008c618)
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5723 +0x92
+created by net/http.(*http2serverConn).processHeaders
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5453 +0x505
+ERROR: 2021/06/17 15:11:07.534069 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:49230: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:11:09.846794 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:59153: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:11:18.703291 C:/Users/USER/code/snippetbox/cmd/web/handler.go:187: Error 1146: Table 'snippets.users' doesn't exist
+goroutine 103 [running]:
+runtime/debug.Stack(0xc0004cc1c8, 0xc00000c420, 0x30)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc00008b230, 0x6d0c30, 0xc00007a600, 0x6cafa0, 0xc0004cc1c8)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:144 +0x69
+main.(*application).signupUser(0xc00008b230, 0x6d0c30, 0xc00007a600, 0xc00020a600)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:187 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc00008e460, 0x6d0c30, 0xc00007a600, 0xc00020a600)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/golangcollege/sessions.(*Session).Enable.func1(0x6d0db0, 0xc00007c058, 0xc00020a600)
+	C:/Users/USER/Go/pkg/mod/github.com/golangcollege/sessions@v1.2.0/session.go:155 +0x156
+net/http.HandlerFunc.ServeHTTP(0xc000096360, 0x6d0db0, 0xc00007c058, 0xc00020a500)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/bmizerany/pat.(*PatternServeMux).ServeHTTP(0xc00008c240, 0x6d0db0, 0xc00007c058, 0xc00020a500)
+	C:/Users/USER/Go/pkg/mod/github.com/bmizerany/pat@v0.0.0-20210406213842-e4b6760bdd6f/mux.go:117 +0x15e
+main.secureHeaders.func1(0x6d0db0, 0xc00007c058, 0xc00020a500)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:12 +0x216
+net/http.HandlerFunc.ServeHTTP(0xc00008c258, 0x6d0db0, 0xc00007c058, 0xc00020a500)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).logRequest.func1(0x6d0db0, 0xc00007c058, 0xc00020a500)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:19 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0xc000096400, 0x6d0db0, 0xc00007c058, 0xc00020a500)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).recoverPanic.func1(0x6d0db0, 0xc00007c058, 0xc00020a500)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:37 +0x8e
+net/http.HandlerFunc.ServeHTTP(0xc000096420, 0x6d0db0, 0xc00007c058, 0xc00020a500)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.serverHandler.ServeHTTP(0xc0000c6000, 0x6d0db0, 0xc00007c058, 0xc00020a500)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.initALPNRequest.ServeHTTP(0x6d18e0, 0xc00017fd70, 0xc0000e4a80, 0xc0000c6000, 0x6d0db0, 0xc00007c058, 0xc00020a500)
+	C:/Program Files/Go/src/net/http/server.go:3459 +0xa5
+net/http.(*http2serverConn).runHandler(0xc00002b800, 0xc00007c058, 0xc00020a500, 0xc0004cc048)
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5723 +0x92
+created by net/http.(*http2serverConn).processHeaders
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5453 +0x505
+ERROR: 2021/06/17 15:11:29.142159 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:58663: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:14:09.885910 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:52214: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:14:19.447192 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:61643: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:14:19.460503 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:65386: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:14:20.059491 C:/Users/USER/code/snippetbox/cmd/web/handler.go:187: Error 1136: Column count doesn't match value count at row 1
+goroutine 73 [running]:
+runtime/debug.Stack(0xc00008c5a0, 0xc00009c800, 0x3b)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc0001e7710, 0x850c30, 0xc000093040, 0x84afa0, 0xc00008c5a0)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:144 +0x69
+main.(*application).signupUser(0xc0001e7710, 0x850c30, 0xc000093040, 0xc0000a4800)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:187 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc0001aeb90, 0x850c30, 0xc000093040, 0xc0000a4800)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/golangcollege/sessions.(*Session).Enable.func1(0x850db0, 0xc000155fb0, 0xc0000a4800)
+	C:/Users/USER/Go/pkg/mod/github.com/golangcollege/sessions@v1.2.0/session.go:155 +0x156
+net/http.HandlerFunc.ServeHTTP(0xc000122da0, 0x850db0, 0xc000155fb0, 0xc0001eaf00)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/bmizerany/pat.(*PatternServeMux).ServeHTTP(0xc000114918, 0x850db0, 0xc000155fb0, 0xc0001eaf00)
+	C:/Users/USER/Go/pkg/mod/github.com/bmizerany/pat@v0.0.0-20210406213842-e4b6760bdd6f/mux.go:117 +0x15e
+main.secureHeaders.func1(0x850db0, 0xc000155fb0, 0xc0001eaf00)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:12 +0x216
+net/http.HandlerFunc.ServeHTTP(0xc000114930, 0x850db0, 0xc000155fb0, 0xc0001eaf00)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).logRequest.func1(0x850db0, 0xc000155fb0, 0xc0001eaf00)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:19 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0xc000122e40, 0x850db0, 0xc000155fb0, 0xc0001eaf00)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).recoverPanic.func1(0x850db0, 0xc000155fb0, 0xc0001eaf00)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:37 +0x8e
+net/http.HandlerFunc.ServeHTTP(0xc000122e60, 0x850db0, 0xc000155fb0, 0xc0001eaf00)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.serverHandler.ServeHTTP(0xc00019e1c0, 0x850db0, 0xc000155fb0, 0xc0001eaf00)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.initALPNRequest.ServeHTTP(0x8518e0, 0xc0004544e0, 0xc0001a5880, 0xc00019e1c0, 0x850db0, 0xc000155fb0, 0xc0001eaf00)
+	C:/Program Files/Go/src/net/http/server.go:3459 +0xa5
+net/http.(*http2serverConn).runHandler(0xc000158d80, 0xc000155fb0, 0xc0001eaf00, 0xc00042ccd8)
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5723 +0x92
+created by net/http.(*http2serverConn).processHeaders
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5453 +0x505
+ERROR: 2021/06/17 15:16:25.253456 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:51130: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:16:30.048073 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:63460: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:16:30.820161 C:/Users/USER/code/snippetbox/cmd/web/helpers.go:16: The template login.page.tmpl does not exist
+goroutine 59 [running]:
+runtime/debug.Stack(0xc0003e96c0, 0xc0003aba10, 0x2b)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc000079a70, 0x4f0c30, 0xc000099dc0, 0x4eaf00, 0xc0003e96c0)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:144 +0x69
+main.(*application).render(0xc000079a70, 0x4f0c30, 0xc000099dc0, 0xc0000a7100, 0x471362, 0xf, 0xc000099e00)
+	C:/Users/USER/code/snippetbox/cmd/web/helpers.go:16 +0x23b
+main.(*application).loginUserForm(...)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:196
+net/http.HandlerFunc.ServeHTTP(0xc00007e5c0, 0x4f0c30, 0xc000099dc0, 0xc0000a7100)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/golangcollege/sessions.(*Session).Enable.func1(0x4f0db0, 0xc0000066e8, 0xc0000a7100)
+	C:/Users/USER/Go/pkg/mod/github.com/golangcollege/sessions@v1.2.0/session.go:155 +0x156
+net/http.HandlerFunc.ServeHTTP(0xc0001a6420, 0x4f0db0, 0xc0000066e8, 0xc000206c00)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/bmizerany/pat.(*PatternServeMux).ServeHTTP(0xc00007c348, 0x4f0db0, 0xc0000066e8, 0xc000206c00)
+	C:/Users/USER/Go/pkg/mod/github.com/bmizerany/pat@v0.0.0-20210406213842-e4b6760bdd6f/mux.go:117 +0x15e
+main.secureHeaders.func1(0x4f0db0, 0xc0000066e8, 0xc000206c00)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:12 +0x216
+net/http.HandlerFunc.ServeHTTP(0xc00007c360, 0x4f0db0, 0xc0000066e8, 0xc000206c00)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).logRequest.func1(0x4f0db0, 0xc0000066e8, 0xc000206c00)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:19 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0xc0001a64a0, 0x4f0db0, 0xc0000066e8, 0xc000206c00)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).recoverPanic.func1(0x4f0db0, 0xc0000066e8, 0xc000206c00)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:37 +0x8e
+net/http.HandlerFunc.ServeHTTP(0xc0001a64c0, 0x4f0db0, 0xc0000066e8, 0xc000206c00)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.serverHandler.ServeHTTP(0xc0001dc000, 0x4f0db0, 0xc0000066e8, 0xc000206c00)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.initALPNRequest.ServeHTTP(0x4f18e0, 0xc0002309c0, 0xc00013ce00, 0xc0001dc000, 0x4f0db0, 0xc0000066e8, 0xc000206c00)
+	C:/Program Files/Go/src/net/http/server.go:3459 +0xa5
+net/http.(*http2serverConn).runHandler(0xc00002b980, 0xc0000066e8, 0xc000206c00, 0xc000004cf0)
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5723 +0x92
+created by net/http.(*http2serverConn).processHeaders
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5453 +0x505
+ERROR: 2021/06/17 15:17:04.450252 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:56767: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:17:04.472188 C:/Users/USER/code/snippetbox/cmd/web/helpers.go:16: The template login.page.tmpl does not exist
+goroutine 60 [running]:
+runtime/debug.Stack(0xc00014f520, 0xc00000cf30, 0x2b)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc000079a70, 0x4f0c30, 0xc00020a9c0, 0x4eaf00, 0xc00014f520)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:144 +0x69
+main.(*application).render(0xc000079a70, 0x4f0c30, 0xc00020a9c0, 0xc000206f00, 0x471362, 0xf, 0xc00020aa00)
+	C:/Users/USER/code/snippetbox/cmd/web/helpers.go:16 +0x23b
+main.(*application).loginUserForm(...)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:196
+net/http.HandlerFunc.ServeHTTP(0xc00007e5c0, 0x4f0c30, 0xc00020a9c0, 0xc000206f00)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/golangcollege/sessions.(*Session).Enable.func1(0x4f0db0, 0xc0000066f0, 0xc000206f00)
+	C:/Users/USER/Go/pkg/mod/github.com/golangcollege/sessions@v1.2.0/session.go:155 +0x156
+net/http.HandlerFunc.ServeHTTP(0xc0001a6420, 0x4f0db0, 0xc0000066f0, 0xc000206e00)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/bmizerany/pat.(*PatternServeMux).ServeHTTP(0xc00007c348, 0x4f0db0, 0xc0000066f0, 0xc000206e00)
+	C:/Users/USER/Go/pkg/mod/github.com/bmizerany/pat@v0.0.0-20210406213842-e4b6760bdd6f/mux.go:117 +0x15e
+main.secureHeaders.func1(0x4f0db0, 0xc0000066f0, 0xc000206e00)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:12 +0x216
+net/http.HandlerFunc.ServeHTTP(0xc00007c360, 0x4f0db0, 0xc0000066f0, 0xc000206e00)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).logRequest.func1(0x4f0db0, 0xc0000066f0, 0xc000206e00)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:19 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0xc0001a64a0, 0x4f0db0, 0xc0000066f0, 0xc000206e00)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).recoverPanic.func1(0x4f0db0, 0xc0000066f0, 0xc000206e00)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:37 +0x8e
+net/http.HandlerFunc.ServeHTTP(0xc0001a64c0, 0x4f0db0, 0xc0000066f0, 0xc000206e00)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.serverHandler.ServeHTTP(0xc0001dc000, 0x4f0db0, 0xc0000066f0, 0xc000206e00)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.initALPNRequest.ServeHTTP(0x4f18e0, 0xc0003ef1a0, 0xc0000e5500, 0xc0001dc000, 0x4f0db0, 0xc0000066f0, 0xc000206e00)
+	C:/Program Files/Go/src/net/http/server.go:3459 +0xa5
+net/http.(*http2serverConn).runHandler(0xc0001d8480, 0xc0000066f0, 0xc000206e00, 0xc000004d50)
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5723 +0x92
+created by net/http.(*http2serverConn).processHeaders
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5453 +0x505
+ERROR: 2021/06/17 15:17:05.369509 C:/Users/USER/code/snippetbox/cmd/web/helpers.go:16: The template login.page.tmpl does not exist
+goroutine 31 [running]:
+runtime/debug.Stack(0xc00007e4f0, 0xc00000c630, 0x2b)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc000079a70, 0x4f0c30, 0xc000098900, 0x4eaf00, 0xc00007e4f0)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:144 +0x69
+main.(*application).render(0xc000079a70, 0x4f0c30, 0xc000098900, 0xc0001d2300, 0x471362, 0xf, 0xc000098a40)
+	C:/Users/USER/code/snippetbox/cmd/web/helpers.go:16 +0x23b
+main.(*application).loginUserForm(...)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:196
+net/http.HandlerFunc.ServeHTTP(0xc00007e5c0, 0x4f0c30, 0xc000098900, 0xc0001d2300)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/golangcollege/sessions.(*Session).Enable.func1(0x4f0db0, 0xc00009c058, 0xc0001d2300)
+	C:/Users/USER/Go/pkg/mod/github.com/golangcollege/sessions@v1.2.0/session.go:155 +0x156
+net/http.HandlerFunc.ServeHTTP(0xc0001a6420, 0x4f0db0, 0xc00009c058, 0xc000206300)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/bmizerany/pat.(*PatternServeMux).ServeHTTP(0xc00007c348, 0x4f0db0, 0xc00009c058, 0xc000206300)
+	C:/Users/USER/Go/pkg/mod/github.com/bmizerany/pat@v0.0.0-20210406213842-e4b6760bdd6f/mux.go:117 +0x15e
+main.secureHeaders.func1(0x4f0db0, 0xc00009c058, 0xc000206300)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:12 +0x216
+net/http.HandlerFunc.ServeHTTP(0xc00007c360, 0x4f0db0, 0xc00009c058, 0xc000206300)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).logRequest.func1(0x4f0db0, 0xc00009c058, 0xc000206300)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:19 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0xc0001a64a0, 0x4f0db0, 0xc00009c058, 0xc000206300)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).recoverPanic.func1(0x4f0db0, 0xc00009c058, 0xc000206300)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:37 +0x8e
+net/http.HandlerFunc.ServeHTTP(0xc0001a64c0, 0x4f0db0, 0xc00009c058, 0xc000206300)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.serverHandler.ServeHTTP(0xc0001dc000, 0x4f0db0, 0xc00009c058, 0xc000206300)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.initALPNRequest.ServeHTTP(0x4f18e0, 0xc0003ef1a0, 0xc0000e5500, 0xc0001dc000, 0x4f0db0, 0xc00009c058, 0xc000206300)
+	C:/Program Files/Go/src/net/http/server.go:3459 +0xa5
+net/http.(*http2serverConn).runHandler(0xc0001d8480, 0xc00009c058, 0xc000206300, 0xc00007c018)
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5723 +0x92
+created by net/http.(*http2serverConn).processHeaders
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5453 +0x505
+ERROR: 2021/06/17 15:17:22.125588 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:53875: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:17:37.667731 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:55250: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:17:37.680146 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:57023: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:18:11.880007 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:62265: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:18:52.458030 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:52246: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:18:52.470408 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:50119: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:19:03.563142 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:59453: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:19:03.574947 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:62669: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:19:04.251306 C:/Users/USER/code/snippetbox/cmd/web/handler.go:187: Error 1062: Duplicate entry 'yunushamod@gmail.com' for key 'users_uc_email'
+goroutine 123 [running]:
+runtime/debug.Stack(0xc0000048b8, 0xc0000ac140, 0x4b)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc0000caa80, 0xd90c30, 0xc000568180, 0xd8afa0, 0xc0000048b8)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:144 +0x69
+main.(*application).signupUser(0xc0000caa80, 0xd90c30, 0xc000568180, 0xc000524700)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:187 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc0000927d0, 0xd90c30, 0xc000568180, 0xc000524700)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/golangcollege/sessions.(*Session).Enable.func1(0xd90db0, 0xc00009e5a0, 0xc000524700)
+	C:/Users/USER/Go/pkg/mod/github.com/golangcollege/sessions@v1.2.0/session.go:155 +0x156
+net/http.HandlerFunc.ServeHTTP(0xc00008e5e0, 0xd90db0, 0xc00009e5a0, 0xc0001aed00)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/bmizerany/pat.(*PatternServeMux).ServeHTTP(0xc0000963d8, 0xd90db0, 0xc00009e5a0, 0xc0001aed00)
+	C:/Users/USER/Go/pkg/mod/github.com/bmizerany/pat@v0.0.0-20210406213842-e4b6760bdd6f/mux.go:117 +0x15e
+main.secureHeaders.func1(0xd90db0, 0xc00009e5a0, 0xc0001aed00)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:12 +0x216
+net/http.HandlerFunc.ServeHTTP(0xc0000963f0, 0xd90db0, 0xc00009e5a0, 0xc0001aed00)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).logRequest.func1(0xd90db0, 0xc00009e5a0, 0xc0001aed00)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:19 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0xc00008e680, 0xd90db0, 0xc00009e5a0, 0xc0001aed00)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).recoverPanic.func1(0xd90db0, 0xc00009e5a0, 0xc0001aed00)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:37 +0x8e
+net/http.HandlerFunc.ServeHTTP(0xc00008e6a0, 0xd90db0, 0xc00009e5a0, 0xc0001aed00)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.serverHandler.ServeHTTP(0xc0000d0000, 0xd90db0, 0xc00009e5a0, 0xc0001aed00)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.initALPNRequest.ServeHTTP(0xd918e0, 0xc0002a32c0, 0xc0001f6a80, 0xc0000d0000, 0xd90db0, 0xc00009e5a0, 0xc0001aed00)
+	C:/Program Files/Go/src/net/http/server.go:3459 +0xa5
+net/http.(*http2serverConn).runHandler(0xc000378000, 0xc00009e5a0, 0xc0001aed00, 0xc0000d8f18)
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5723 +0x92
+created by net/http.(*http2serverConn).processHeaders
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5453 +0x505
+ERROR: 2021/06/17 15:25:23.223528 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:54166: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:39:08.490768 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:62683: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:39:09.211270 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:63240: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:39:18.795790 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:65396: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:39:23.035553 C:/Users/USER/code/snippetbox/cmd/web/helpers.go:25: template: base.layout.tmpl:20:17: executing "base" at <.AutenticatedUser>: can't evaluate field AutenticatedUser in type *main.templateData
+goroutine 30 [running]:
+runtime/debug.Stack(0xc00001e820, 0xc000064090, 0x8b)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc0001f8210, 0x5e0cd0, 0xc0001e12c0, 0x5dbea0, 0xc00001e820)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:144 +0x69
+main.(*application).render(0xc0001f8210, 0x5e0cd0, 0xc0001e12c0, 0xc0001de900, 0x560a0c, 0xe, 0xc0000664b0)
+	C:/Users/USER/code/snippetbox/cmd/web/helpers.go:25 +0x137
+main.(*application).home(0xc0001f8210, 0x5e0cd0, 0xc0001e12c0, 0xc0001de900)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:50 +0xed
+net/http.HandlerFunc.ServeHTTP(0xc0001aece0, 0x5e0cd0, 0xc0001e12c0, 0xc0001de900)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/golangcollege/sessions.(*Session).Enable.func1(0x5e0e50, 0xc000154748, 0xc0001de900)
+	C:/Users/USER/Go/pkg/mod/github.com/golangcollege/sessions@v1.2.0/session.go:155 +0x156
+net/http.HandlerFunc.ServeHTTP(0xc000122a80, 0x5e0e50, 0xc000154748, 0xc0001de700)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/bmizerany/pat.(*PatternServeMux).ServeHTTP(0xc000114a20, 0x5e0e50, 0xc000154748, 0xc0001de700)
+	C:/Users/USER/Go/pkg/mod/github.com/bmizerany/pat@v0.0.0-20210406213842-e4b6760bdd6f/mux.go:117 +0x15e
+main.secureHeaders.func1(0x5e0e50, 0xc000154748, 0xc0001de700)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:12 +0x216
+net/http.HandlerFunc.ServeHTTP(0xc000114a38, 0x5e0e50, 0xc000154748, 0xc0001de700)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).logRequest.func1(0x5e0e50, 0xc000154748, 0xc0001de700)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:19 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0xc000122c00, 0x5e0e50, 0xc000154748, 0xc0001de700)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).recoverPanic.func1(0x5e0e50, 0xc000154748, 0xc0001de700)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:37 +0x8e
+net/http.HandlerFunc.ServeHTTP(0xc000122c20, 0x5e0e50, 0xc000154748, 0xc0001de700)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.serverHandler.ServeHTTP(0xc00019e1c0, 0x5e0e50, 0xc000154748, 0xc0001de700)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.initALPNRequest.ServeHTTP(0x5e1980, 0xc00001ba70, 0xc0001a5180, 0xc00019e1c0, 0x5e0e50, 0xc000154748, 0xc0001de700)
+	C:/Program Files/Go/src/net/http/server.go:3459 +0xa5
+net/http.(*http2serverConn).runHandler(0xc00002ad80, 0xc000154748, 0xc0001de700, 0xc000114df8)
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5723 +0x92
+created by net/http.(*http2serverConn).processHeaders
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5453 +0x505
+ERROR: 2021/06/17 15:39:30.192738 C:/Users/USER/code/snippetbox/cmd/web/helpers.go:25: template: base.layout.tmpl:20:17: executing "base" at <.AutenticatedUser>: can't evaluate field AutenticatedUser in type *main.templateData
+goroutine 53 [running]:
+runtime/debug.Stack(0xc0002ca220, 0xc0002c6090, 0x8b)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc0001f8210, 0x5e0cd0, 0xc0002ac300, 0x5dbea0, 0xc0002ca220)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:144 +0x69
+main.(*application).render(0xc0001f8210, 0x5e0cd0, 0xc0002ac300, 0xc0002be200, 0x560a0c, 0xe, 0xc0002ae190)
+	C:/Users/USER/code/snippetbox/cmd/web/helpers.go:25 +0x137
+main.(*application).home(0xc0001f8210, 0x5e0cd0, 0xc0002ac300, 0xc0002be200)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:50 +0xed
+net/http.HandlerFunc.ServeHTTP(0xc0001aece0, 0x5e0cd0, 0xc0002ac300, 0xc0002be200)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/golangcollege/sessions.(*Session).Enable.func1(0x5e0e50, 0xc000286020, 0xc0002be200)
+	C:/Users/USER/Go/pkg/mod/github.com/golangcollege/sessions@v1.2.0/session.go:155 +0x156
+net/http.HandlerFunc.ServeHTTP(0xc000122a80, 0x5e0e50, 0xc000286020, 0xc0002be100)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/bmizerany/pat.(*PatternServeMux).ServeHTTP(0xc000114a20, 0x5e0e50, 0xc000286020, 0xc0002be100)
+	C:/Users/USER/Go/pkg/mod/github.com/bmizerany/pat@v0.0.0-20210406213842-e4b6760bdd6f/mux.go:117 +0x15e
+main.secureHeaders.func1(0x5e0e50, 0xc000286020, 0xc0002be100)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:12 +0x216
+net/http.HandlerFunc.ServeHTTP(0xc000114a38, 0x5e0e50, 0xc000286020, 0xc0002be100)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).logRequest.func1(0x5e0e50, 0xc000286020, 0xc0002be100)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:19 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0xc000122c00, 0x5e0e50, 0xc000286020, 0xc0002be100)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).recoverPanic.func1(0x5e0e50, 0xc000286020, 0xc0002be100)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:37 +0x8e
+net/http.HandlerFunc.ServeHTTP(0xc000122c20, 0x5e0e50, 0xc000286020, 0xc0002be100)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.serverHandler.ServeHTTP(0xc00019e1c0, 0x5e0e50, 0xc000286020, 0xc0002be100)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.initALPNRequest.ServeHTTP(0x5e1980, 0xc00001ba70, 0xc0001a5180, 0xc00019e1c0, 0x5e0e50, 0xc000286020, 0xc0002be100)
+	C:/Program Files/Go/src/net/http/server.go:3459 +0xa5
+net/http.(*http2serverConn).runHandler(0xc00002ad80, 0xc000286020, 0xc0002be100, 0xc00029a030)
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5723 +0x92
+created by net/http.(*http2serverConn).processHeaders
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5453 +0x505
+ERROR: 2021/06/17 15:39:32.006129 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:58759: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:39:34.489089 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:52127: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:39:34.501712 C:/Users/USER/code/snippetbox/cmd/web/helpers.go:25: template: base.layout.tmpl:20:17: executing "base" at <.AutenticatedUser>: can't evaluate field AutenticatedUser in type *main.templateData
+goroutine 71 [running]:
+runtime/debug.Stack(0xc0002ca4a0, 0xc0002c61b0, 0x8b)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc0001f8210, 0x5e0cd0, 0xc0002ac600, 0x5dbea0, 0xc0002ca4a0)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:144 +0x69
+main.(*application).render(0xc0001f8210, 0x5e0cd0, 0xc0002ac600, 0xc0002be300, 0x560a0c, 0xe, 0xc0002ae320)
+	C:/Users/USER/code/snippetbox/cmd/web/helpers.go:25 +0x137
+main.(*application).home(0xc0001f8210, 0x5e0cd0, 0xc0002ac600, 0xc0002be300)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:50 +0xed
+net/http.HandlerFunc.ServeHTTP(0xc0001aece0, 0x5e0cd0, 0xc0002ac600, 0xc0002be300)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/golangcollege/sessions.(*Session).Enable.func1(0x5e0e50, 0xc0001548b8, 0xc0002be300)
+	C:/Users/USER/Go/pkg/mod/github.com/golangcollege/sessions@v1.2.0/session.go:155 +0x156
+net/http.HandlerFunc.ServeHTTP(0xc000122a80, 0x5e0e50, 0xc0001548b8, 0xc0001df000)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/bmizerany/pat.(*PatternServeMux).ServeHTTP(0xc000114a20, 0x5e0e50, 0xc0001548b8, 0xc0001df000)
+	C:/Users/USER/Go/pkg/mod/github.com/bmizerany/pat@v0.0.0-20210406213842-e4b6760bdd6f/mux.go:117 +0x15e
+main.secureHeaders.func1(0x5e0e50, 0xc0001548b8, 0xc0001df000)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:12 +0x216
+net/http.HandlerFunc.ServeHTTP(0xc000114a38, 0x5e0e50, 0xc0001548b8, 0xc0001df000)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).logRequest.func1(0x5e0e50, 0xc0001548b8, 0xc0001df000)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:19 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0xc000122c00, 0x5e0e50, 0xc0001548b8, 0xc0001df000)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).recoverPanic.func1(0x5e0e50, 0xc0001548b8, 0xc0001df000)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:37 +0x8e
+net/http.HandlerFunc.ServeHTTP(0xc000122c20, 0x5e0e50, 0xc0001548b8, 0xc0001df000)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.serverHandler.ServeHTTP(0xc00019e1c0, 0x5e0e50, 0xc0001548b8, 0xc0001df000)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.initALPNRequest.ServeHTTP(0x5e1980, 0xc0001f9d70, 0xc0001a5c00, 0xc00019e1c0, 0x5e0e50, 0xc0001548b8, 0xc0001df000)
+	C:/Program Files/Go/src/net/http/server.go:3459 +0xa5
+net/http.(*http2serverConn).runHandler(0xc000158f00, 0xc0001548b8, 0xc0001df000, 0xc000115110)
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5723 +0x92
+created by net/http.(*http2serverConn).processHeaders
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5453 +0x505
+ERROR: 2021/06/17 15:39:37.004141 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:64007: read tcp [::1]:4000->[::1]:64007: i/o timeout
+ERROR: 2021/06/17 15:40:30.391238 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:57466: remote error: tls: unknown certificate
+ERROR: 2021/06/17 15:40:30.408036 C:/Users/USER/code/snippetbox/cmd/web/helpers.go:25: template: base.layout.tmpl:20:17: executing "base" at <.AutenticatedUser>: can't evaluate field AutenticatedUser in type *main.templateData
+goroutine 74 [running]:
+runtime/debug.Stack(0xc0002ca720, 0xc0002c6360, 0x8b)
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0xa5
+main.(*application).serverError(0xc0001f8210, 0x5e0cd0, 0xc0002ac8c0, 0x5dbea0, 0xc0002ca720)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:144 +0x69
+main.(*application).render(0xc0001f8210, 0x5e0cd0, 0xc0002ac8c0, 0xc0002be400, 0x560a0c, 0xe, 0xc0002ae550)
+	C:/Users/USER/code/snippetbox/cmd/web/helpers.go:25 +0x137
+main.(*application).home(0xc0001f8210, 0x5e0cd0, 0xc0002ac8c0, 0xc0002be400)
+	C:/Users/USER/code/snippetbox/cmd/web/handler.go:50 +0xed
+net/http.HandlerFunc.ServeHTTP(0xc0001aece0, 0x5e0cd0, 0xc0002ac8c0, 0xc0002be400)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/golangcollege/sessions.(*Session).Enable.func1(0x5e0e50, 0xc0001548d8, 0xc0002be400)
+	C:/Users/USER/Go/pkg/mod/github.com/golangcollege/sessions@v1.2.0/session.go:155 +0x156
+net/http.HandlerFunc.ServeHTTP(0xc000122a80, 0x5e0e50, 0xc0001548d8, 0xc0001df200)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+github.com/bmizerany/pat.(*PatternServeMux).ServeHTTP(0xc000114a20, 0x5e0e50, 0xc0001548d8, 0xc0001df200)
+	C:/Users/USER/Go/pkg/mod/github.com/bmizerany/pat@v0.0.0-20210406213842-e4b6760bdd6f/mux.go:117 +0x15e
+main.secureHeaders.func1(0x5e0e50, 0xc0001548d8, 0xc0001df200)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:12 +0x216
+net/http.HandlerFunc.ServeHTTP(0xc000114a38, 0x5e0e50, 0xc0001548d8, 0xc0001df200)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).logRequest.func1(0x5e0e50, 0xc0001548d8, 0xc0001df200)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:19 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0xc000122c00, 0x5e0e50, 0xc0001548d8, 0xc0001df200)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+main.(*application).recoverPanic.func1(0x5e0e50, 0xc0001548d8, 0xc0001df200)
+	C:/Users/USER/code/snippetbox/cmd/web/middleware.go:37 +0x8e
+net/http.HandlerFunc.ServeHTTP(0xc000122c20, 0x5e0e50, 0xc0001548d8, 0xc0001df200)
+	C:/Program Files/Go/src/net/http/server.go:2069 +0x4b
+net/http.serverHandler.ServeHTTP(0xc00019e1c0, 0x5e0e50, 0xc0001548d8, 0xc0001df200)
+	C:/Program Files/Go/src/net/http/server.go:2887 +0xaa
+net/http.initALPNRequest.ServeHTTP(0x5e1980, 0xc000253500, 0xc000009880, 0xc00019e1c0, 0x5e0e50, 0xc0001548d8, 0xc0001df200)
+	C:/Program Files/Go/src/net/http/server.go:3459 +0xa5
+net/http.(*http2serverConn).runHandler(0xc00002b080, 0xc0001548d8, 0xc0001df200, 0xc000115188)
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5723 +0x92
+created by net/http.(*http2serverConn).processHeaders
+	C:/Program Files/Go/src/net/http/h2_bundle.go:5453 +0x505
+ERROR: 2021/06/17 15:42:12.278808 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:65245: remote error: tls: unknown certificate
+ERROR: 2021/06/17 16:49:56.423276 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:50845: remote error: tls: unknown certificate
+ERROR: 2021/06/17 16:49:56.469897 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:63304: remote error: tls: unknown certificate
+ERROR: 2021/06/17 16:49:56.583632 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:62257: remote error: tls: unknown certificate
+ERROR: 2021/06/17 16:49:56.689052 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:55779: remote error: tls: unknown certificate
+ERROR: 2021/06/17 16:49:57.063431 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:63193: remote error: tls: unknown certificate
+ERROR: 2021/06/17 16:50:01.457962 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:53805: read tcp [::1]:4000->[::1]:53805: i/o timeout
+ERROR: 2021/06/17 16:50:02.320082 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:64567: remote error: tls: unknown certificate
+ERROR: 2021/06/17 16:57:43.486788 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:63121: remote error: tls: unknown certificate
+ERROR: 2021/06/17 16:57:45.637332 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:49741: remote error: tls: unknown certificate
+ERROR: 2021/06/17 16:57:56.968023 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:62883: remote error: tls: unknown certificate
+ERROR: 2021/06/17 16:57:56.983592 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:65489: remote error: tls: unknown certificate
+ERROR: 2021/06/17 16:58:07.968810 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:51023: remote error: tls: unknown certificate
+ERROR: 2021/06/17 16:58:07.977065 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:61028: remote error: tls: unknown certificate
+ERROR: 2021/06/17 16:58:17.099306 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:64742: remote error: tls: unknown certificate
+ERROR: 2021/06/17 16:58:17.113866 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:54114: remote error: tls: unknown certificate
+ERROR: 2021/06/17 16:58:51.412247 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:63016: remote error: tls: unknown certificate
+ERROR: 2021/06/17 16:59:00.951288 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:54685: remote error: tls: unknown certificate
+ERROR: 2021/06/17 16:59:00.966055 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:52231: remote error: tls: unknown certificate
+ERROR: 2021/06/17 16:59:10.725339 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:54094: remote error: tls: unknown certificate
+ERROR: 2021/06/17 16:59:13.379632 C:/Program Files/Go/src/net/http/server.go:3137: http: TLS handshake error from [::1]:61706: remote error: tls: unknown certificate
+ERROR: 2021/06/18 16:06:26.180618 C:/Users/USER/code/snippetbox/cmd/web/main.go:54: dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+ERROR: 2021/06/18 16:06:42.459782 C:/Users/USER/code/snippetbox/cmd/web/main.go:54: dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+ERROR: 2021/06/18 16:07:01.092219 C:/Users/USER/code/snippetbox/cmd/web/main.go:54: dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+ERROR: 2021/06/18 16:07:49.968183 C:/Users/USER/code/snippetbox/cmd/web/main.go:54: dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.

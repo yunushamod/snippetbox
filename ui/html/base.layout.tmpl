@@ -1,0 +1,48 @@
+{{define "base"}}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+        <title>{{template "title" .}} - Snippetbox</title>
+        <!--Link to the CSS stylesheet and favicon -->
+        <link rel="stylesheet" href="/static/css/main.css">
+        <link rel="shortcut icon" href="/static/img/favicon.ico">
+        <!-- Also link to some fonts hosted by Google -->
+    </head>
+    <body>
+        <header>
+            <h1><a href="/">Snippetbox</a></h1>
+        </header>
+        <nav>
+            <div>
+            <a href="/">Home</a>
+            {{if .AuthenticatedUser}}
+            <a href="/snippet/create">Create snippet</a>
+            {{end}}
+            </div>
+            <div>
+            {{if .AuthenticatedUser}}
+            <form method="POST" action="/user/logout">
+            <!-- Add CSRF Token to the form  -->
+            <input type='hidden' name='csrf_token' value="{{.CSRFToken}}">
+            <button>Logout {[.AuthenticatedUser.Name}}</button>
+            </form>
+            {{else}}
+            <a href="/user/signup">Signup</a>
+            <a href="/user/login">Login</a>
+            {{end}}
+            </div>
+        </nav>
+        <section>
+            {{with .Flash}}
+                <div class='flash '>{{.}}</div>
+            {{end}}
+            {{template "body" .}}
+        </section>
+        {{template "footer" .}}
+        <!-- And include the JavaScript file -->
+        <script src="/static/js/main.js"></script>
+    </body>
+</html>
+{{end}}
